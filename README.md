@@ -2,12 +2,20 @@
 
 <div align="center">
 
+[![Maintainability][maintainability-image]](maintainability-url)
 ![publish workflow][publish-workflow-image]
+[![Test Coverage][test-coverage-image]](test-coverage-url)
 [![license][license-image]](license-url)
 [![GitHub issues][github-issues-image]](github-issues-url)
 ![NPM bundle size(minified + gzip)][bundle-size-image]
 
+[maintainability-image]: https://api.codeclimate.com/v1/badges/d3eaf22221bf57742429/maintainability
+[maintainability-url]: https://codeclimate.com/github/zheeeng/babel-plugin-rewrite-module-path/maintainability
+
 [publish-workflow-image]: https://github.com/zheeeng/babel-plugin-rewrite-module-path/actions/workflows/publish.yml/badge.svg
+
+[test-coverage-image]: https://api.codeclimate.com/v1/badges/d3eaf22221bf57742429/test_coverage
+[test-coverage-url]: https://codeclimate.com/github/zheeeng/babel-plugin-rewrite-module-path/test_coverage
 
 [license-image]: https://img.shields.io/github/license/mashape/apistatus.svg
 [license-url]: https://github.com/zheeeng/babel-plugin-rewrite-module-path/blob/master/LICENSE
@@ -223,7 +231,7 @@ npm install babel-plugin-rewrite-module-path
 The Plugin Options Signature:
 
 ```ts
-export type RewriteNodeModulesOptions = {
+export type RewriteModulePathOptions = {
     rewriteMapper: Record<string, string>,
     transform?: {
         importDeclaration?: boolean,
@@ -240,7 +248,7 @@ export type RewriteNodeModulesOptions = {
 The Default Options:
 
 ```ts
-export const defaultRewriteNodeModulesOptions = {
+export const defaultRewriteModulePathOptions = {
     transform: {
         importDeclaration: true,
         exportDeclaration: true,

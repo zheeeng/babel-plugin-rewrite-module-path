@@ -9,7 +9,7 @@ function join(...args: string[]) {
   return path.join(...args)
 }
 
-export type RewriteNodeModulesOptions = {
+export type RewriteModulePathOptions = {
   rewriteMapper: Record<string, string>,
   transform?: {
     importDeclaration?: boolean,
@@ -22,7 +22,7 @@ export type RewriteNodeModulesOptions = {
   }
 }
 
-export const defaultRewriteNodeModulesOptions = {
+export const defaultRewriteModulePathOptions = {
   transform: {
     importDeclaration: true,
     exportDeclaration: true,
@@ -34,8 +34,8 @@ export const defaultRewriteNodeModulesOptions = {
   }
 }
 
-export default function babelPluginRewriteNodeModules (_: typeof babelCore, options: RewriteNodeModulesOptions): babelCore.PluginObj {
-  const { rewriteMapper, transform } = { ...defaultRewriteNodeModulesOptions, ...options }
+export default function babelPluginRewriteModulePath (_: typeof babelCore, options: RewriteModulePathOptions): babelCore.PluginObj {
+  const { rewriteMapper, transform } = { ...defaultRewriteModulePathOptions, ...options }
 
   const rewriters = Object.entries(rewriteMapper).map(
     ([from, to]) => {
