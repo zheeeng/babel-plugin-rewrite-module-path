@@ -8,7 +8,6 @@
 ![NPM bundle size(minified + gzip)][bundle-size-image]
 
 [publish-workflow-image]: https://github.com/zheeeng/babel-plugin-rewrite-module-path/actions/workflows/publish.yml/badge.svg
-[![npm bundle size (minified + gzip)](https://img.shields.io/bundlephobia/minzip/babel-plugin-rewrite-module-path.svg)](https://unpkg.com/export-from-json/dist/umd/index.min.js)
 
 [license-image]: https://img.shields.io/github/license/mashape/apistatus.svg
 [license-url]: https://github.com/zheeeng/babel-plugin-rewrite-module-path/blob/master/LICENSE
@@ -16,7 +15,7 @@
 [github-issues-image]: https://img.shields.io/github/issues/zheeeng/babel-plugin-rewrite-module-path
 [github-issues-url]: https://github.com/zheeeng/babel-plugin-rewrite-module-path/issues
 
-[bundle-size-image]: https://img.shields.io/bundlephobia/minzip/export-from-json.svg
+[bundle-size-image]: https://img.shields.io/bundlephobia/minzip/babel-plugin-rewrite-module-path.svg
 
 [![NPM](https://nodei.co/npm/babel-plugin-rewrite-module-path.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/babel-plugin-rewrite-module-path/)
 
