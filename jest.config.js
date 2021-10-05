@@ -10,4 +10,7 @@ module.exports = {
     tsconfig.compilerOptions.paths,
     { prefix: path.join('<rootDir>', tsconfig.compilerOptions.baseUrl) }
   ),
+  collectCoverage: true,
+  coverageDirectory: "coverage",
+  coveragePathIgnorePatterns: ["node_modules", "test/utils"]
 };
