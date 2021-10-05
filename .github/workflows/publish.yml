@@ -15,6 +15,12 @@ jobs:
       - run: npm i -g pnpm
       - run: pnpm install
       - run: pnpm build
+      - name: Coverage
+        uses: paambaati/codeclimate-action@v2.2.4
+        env:
+          CC_TEST_REPORTER_ID: ${{ secrets.CODECLIMATE_REPORTER_ID }}
+        with:
+          coverageCommand: pnpm coverage
       - name: Publish
         uses: JS-DevTools/npm-publish@v1
         with:
