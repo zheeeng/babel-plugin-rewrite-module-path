@@ -25,7 +25,7 @@
     "prebuild": "pnpm test",
     "build": "tsc -b ./tsconfig.build.json",
     "test": "pnpm run test:lint && pnpm run test:spec",
-    "test:spec": "jest",
+    "test:spec": "jest --collectCoverage",
     "test:lint": "eslint ./**/*.ts",
     "test:lint:fix": "eslint ./**/*.ts --fix",
     "prepublishOnly": "pnpm build"

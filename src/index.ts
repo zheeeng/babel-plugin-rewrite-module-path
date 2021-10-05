@@ -4,8 +4,7 @@ import path from 'path'
 function join(...args: string[]) {
   // windows separator
   if (path.sep === '\\') {
-    const ret = path.join(...args)
-    return ret.replace(/\\/g, '/')
+    return path.join(...args).replace(/\\/g, '/')
   }
   return path.join(...args)
 }
