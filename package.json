@@ -22,11 +22,13 @@
   ],
   "scripts": {
     "preinstall": "npx only-allow pnpm",
+    "prebuild": "pnpm test",
     "build": "tsc -b ./tsconfig.build.json",
     "test": "pnpm run test:lint && pnpm run test:spec",
     "test:spec": "jest",
     "test:lint": "eslint ./**/*.ts",
-    "test:lint:fix": "eslint ./**/*.ts --fix"
+    "test:lint:fix": "eslint ./**/*.ts --fix",
+    "prepublishOnly": "pnpm build"
   },
   "dependencies": {
     "@babel/core": "^7.15.5"
