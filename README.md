@@ -2,12 +2,16 @@
 
 <div align="center">
 
+[![Known Vulnerabilities][known-vulnerabilities-image]][known-vulnerabilities-url]
 [![Maintainability][maintainability-image]][maintainability-url]
 ![publish workflow][publish-workflow-image]
 [![Test Coverage][test-coverage-image]][test-coverage-url]
 [![license][license-image]][license-url]
 [![GitHub issues][github-issues-image]][github-issues-url]
 ![NPM bundle size(minified + gzip)][bundle-size-image]
+
+[known-vulnerabilities-image]: https://snyk.io/test/github/zheeeng/babel-plugin-rewrite-module-path/badge.svg
+[known-vulnerabilities-url]: https://snyk.io/test/github/zheeeng/babel-plugin-rewrite-module-path
 
 [maintainability-image]: https://api.codeclimate.com/v1/badges/d3eaf22221bf57742429/maintainability
 [maintainability-url]: https://codeclimate.com/github/zheeeng/babel-plugin-rewrite-module-path/maintainability
