@@ -2,11 +2,11 @@
 
 <div align="center">
 
-[![Maintainability][maintainability-image]](maintainability-url)
+[![Maintainability][maintainability-image]][maintainability-url]
 ![publish workflow][publish-workflow-image]
-[![Test Coverage][test-coverage-image]](test-coverage-url)
-[![license][license-image]](license-url)
-[![GitHub issues][github-issues-image]](github-issues-url)
+[![Test Coverage][test-coverage-image]][test-coverage-url]
+[![license][license-image]][license-url]
+[![GitHub issues][github-issues-image]][github-issues-url]
 ![NPM bundle size(minified + gzip)][bundle-size-image]
 
 [maintainability-image]: https://api.codeclimate.com/v1/badges/d3eaf22221bf57742429/maintainability
