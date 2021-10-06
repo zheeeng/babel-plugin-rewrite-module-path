@@ -232,7 +232,7 @@ npm install babel-plugin-rewrite-module-path
 
 ## Full Option
 
-The Plugin Options Signature:
+The plugin options signatures:
 
 ```ts
 export type RewriteModulePathOptions = {
@@ -249,7 +249,7 @@ export type RewriteModulePathOptions = {
 }
 ```
 
-The Default Options:
+The default options:
 
 ```ts
 export const defaultRewriteModulePathOptions = {
