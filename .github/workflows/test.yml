@@ -1,9 +1,6 @@
-name: npm-publish
+name: test
 
-on:
-  push:
-    branches:
-      - main
+on: push
 
 jobs:
   publish:
@@ -17,8 +14,9 @@ jobs:
           node-version: "14.x"
       - run: npm i -g pnpm
       - run: pnpm install
-      - run: pnpm build
-      - name: Publish
-        uses: JS-DevTools/npm-publish@v1
+      - name: Coverage
+        uses: paambaati/codeclimate-action@v3.0.0
+        env:
+          CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
         with:
-          token: ${{ secrets.NPM_TOKEN }}
+          coverageCommand: pnpm test
