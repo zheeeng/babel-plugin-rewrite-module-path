@@ -10,7 +10,7 @@
     "node_modules",
     "import customization"
   ],
-  "author": "Zheeeng <hi@zheeeng.me>",
+  "author": "Zheeeng<hi@zheeeng.me>",
   "license": "MIT",
   "main": "lib/index.js",
   "repository": {
