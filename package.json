@@ -13,6 +13,7 @@
   "author": "Zheeeng<hi@zheeeng.me>",
   "license": "MIT",
   "main": "lib/index.js",
+  "typing": "lib/index.d.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/zheeeng/babel-plugin-rewrite-module-path"
@@ -26,8 +27,8 @@
     "build": "tsc -b ./tsconfig.build.json",
     "test": "pnpm run test:lint && pnpm run test:spec",
     "test:spec": "jest",
-    "test:lint": "eslint ./**/*.ts",
-    "test:lint:fix": "eslint ./**/*.ts --fix",
+    "test:lint": "eslint {src,test}/**/*.ts",
+    "test:lint:fix": "eslint {src,test}/**/*.ts --fix",
     "prepublishOnly": "pnpm build",
     "release": "standard-version",
     "release:major": "standard-version --release-as major",
