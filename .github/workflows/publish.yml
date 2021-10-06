@@ -17,7 +17,6 @@ jobs:
           node-version: "14.x"
       - run: npm i -g pnpm
       - run: pnpm install
-      - run: pnpm build
       - name: Publish
         uses: JS-DevTools/npm-publish@v1
         with:
