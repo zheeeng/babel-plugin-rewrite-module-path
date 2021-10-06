@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-rewrite-module-path",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Rewrite module resolving path",
   "keywords": [
     "babel-plugin",
