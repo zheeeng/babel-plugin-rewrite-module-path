@@ -41,8 +41,8 @@ devDependencies:
     specifier: ^27.2.2
     version: 27.2.4
   pnpm:
-    specifier: ^6.16.0
-    version: 6.16.0
+    specifier: ^7.33.4
+    version: 7.33.4
   standard-version:
     specifier: ^9.3.1
     version: 9.3.1
@@ -3559,9 +3559,9 @@ packages:
       find-up: 4.1.0
     dev: true
 
-  /pnpm@6.16.0:
-    resolution: {integrity: sha512-g5rbneSqacQaEW0gdvGouxNHbDIpLTShg+cS4yCUwnj32RwMHwxChtcxPOR9VNZvNegcKE9LFUA0PA/uN37mDA==}
-    engines: {node: '>=12.17'}
+  /pnpm@7.33.4:
+    resolution: {integrity: sha512-xEbf/tkwHpGM/GXq5U/sDSiE6ykLPho+o71PHNRWqkVLm6dJe4G/5Pg619Ow32ovekrr7pii5qtfamujB/+1bA==}
+    engines: {node: '>=14.6'}
     hasBin: true
     dev: true
 
