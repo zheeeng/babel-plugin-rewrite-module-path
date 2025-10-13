@@ -36,7 +36,7 @@
     "release:patch": "standard-version --release-as patch"
   },
   "dependencies": {
-    "@babel/core": "^7.15.5"
+    "@babel/core": "^7.28.4"
   },
   "devDependencies": {
     "@commitlint/cli": "^13.1.0",
